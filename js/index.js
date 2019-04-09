@@ -21,6 +21,65 @@ button3.addEventListener('mouseenter', (event) => {
     button3.innerHTML = 'Sign Me Up!'
   })
 
+
+let firstName = document.querySelectorAll('.form-contact input')[0]
+firstName.addEventListener('keyup', (event) => {
+    console.log('First name keyup: ', event.target.value)
+})
+firstName.addEventListener('keydown', (event) => {
+    console.log('First name keydown: ', event.target.value)
+})
+firstName.addEventListener('input', (event) => {
+    console.log('First name input: ', event.target.value)
+})
+
+
+let lastName = document.querySelectorAll('.form-contact input')[1]
+lastName.addEventListener('keyup', (event) => {
+    console.log('Last name keyup: ', event.target.value)
+})
+lastName.addEventListener('keydown', (event) => {
+    console.log('Last name keydown: ', event.target.value)
+})
+lastName.addEventListener('input', (event) => {
+    console.log('Last name input: ', event.target.value)
+})
+
+let email = document.querySelectorAll('.form-contact input')[2]
+email.addEventListener('keyup', (event) => {
+    console.log('Email keyup: ', event.target.value)
+})
+email.addEventListener('keydown', (event) => {
+    console.log('Email keydown: ', event.target.value)
+})
+email.addEventListener('input', (event) => {
+    console.log('Email input: ', event.target.value)
+})
+
+let phone = document.querySelectorAll('.form-contact input')[3]
+phone.addEventListener('keyup', (event) => {
+    console.log('phone keyup: ', event.target.value)
+})
+phone.addEventListener('keydown', (event) => {
+    console.log('phone keydown: ', event.target.value)
+})
+phone.addEventListener('input', (event) => {
+    console.log('phone input: ', event.target.value)
+})
+
+let commentBox = document.querySelector('.form-contact textarea')
+commentBox.addEventListener('keyup', (event) => {
+    console.log('Comment box keyup: ', event.target.value)
+})
+commentBox.addEventListener('keydown', (event) => {
+    console.log('Comment box keydown: ', event.target.value)
+})
+commentBox.addEventListener('input', (event) => {
+    console.log('Comment box input: ', event.target.value)
+})
+
+
+// Chris
 let logoHeading = document.querySelector('.logo-heading');
 logoHeading.addEventListener('mouseover', (event) => {
     event.target.style.color = 'blue';
@@ -32,3 +91,24 @@ logoHeading.addEventListener('mouseout', (event)=> {
 logoHeading.addEventListener('click', (event) => {
     alert('Thank for Visiting Fun Bus! Subscribe for Updates!');
 })
+
+
+
+// Skyler
+const linksin = document.querySelectorAll('a');
+for (var i=0; i < linksin.length; i++) {
+   linksin[i].addEventListener('mouseover', (event) => {
+       event.target.style.color = 'blue'
+       // console.log("target:", event.target);
+       });
+}
+const linksout = document.querySelectorAll('a');
+for (var i=0; i < linksout.length; i++) {
+   linksout[i].addEventListener('mouseout', (event) => {
+       event.target.style.color = 'black'
+       // console.log("target:", event.target);
+   });}
+
+window.addEventListener('load', (event) => {
+       alert("The Page Loaded");
+});
