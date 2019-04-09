@@ -78,22 +78,6 @@ commentBox.addEventListener('input', (event) => {
     console.log('Comment box input: ', event.target.value)
 })
 
-
-// Chris
-let logoHeading = document.querySelector('.logo-heading');
-logoHeading.addEventListener('mouseover', (event) => {
-    event.target.style.color = 'blue';
-    event.target.style.cursor = 'pointer';
-})
-logoHeading.addEventListener('mouseout', (event)=> {
-    event.target.style.color = 'black';
-})
-logoHeading.addEventListener('click', (event) => {
-    alert('Thank for Visiting Fun Bus! Subscribe for Updates!');
-})
-
-
-
 // Skyler
 const linksin = document.querySelectorAll('a');
 for (var i=0; i < linksin.length; i++) {
@@ -112,3 +96,27 @@ for (var i=0; i < linksout.length; i++) {
 window.addEventListener('load', (event) => {
        alert("The Page Loaded");
 });
+
+
+// Chris
+let logoHeading = document.querySelector('.logo-heading');
+logoHeading.addEventListener('mouseover', (event) => {
+    event.target.style.color = 'blue';
+    event.target.style.cursor = 'pointer';
+})
+logoHeading.addEventListener('mouseout', (event)=> {
+    event.target.style.color = 'black';
+})
+logoHeading.addEventListener('click', (event) => {
+    alert('Thank for Visiting Fun Bus! Subscribe for Updates!');
+})
+
+const links = document.querySelectorAll('a');
+for (var i=0; i < links.length; i++) {
+   linksin[i].addEventListener('click', (event) => {
+       event.preventDefault();
+       // prevent default refresh on anchors
+       });
+}
+
+
