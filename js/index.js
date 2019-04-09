@@ -77,6 +77,11 @@ commentBox.addEventListener('keydown', (event) => {
 commentBox.addEventListener('input', (event) => {
     console.log('Comment box input: ', event.target.value)
 })
+const signForm = document.querySelector('.form-contact')
+signForm.addEventListener('submit', event => {
+  event.preventDefault()
+})
+
 
 // Skyler
 const linksin = document.querySelectorAll('a');
@@ -118,5 +123,13 @@ for (var i=0; i < links.length; i++) {
        // prevent default refresh on anchors
        });
 }
-
+const textContent = document.querySelector('.text-content');
+textContent.addEventListener('click', (event) => {
+    alert('Text Content Alert');
+})
+const textContentParagraph = document.querySelector('.text-content p');
+textContentParagraph.addEventListener('click', (event) => {
+    event.stopPropagation();
+    alert('Paragraph Alert');
+});
 
